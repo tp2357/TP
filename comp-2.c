@@ -9,7 +9,7 @@ int *mot(const char *s) {
 	int *m = (int*) malloc(len * sizeof(int));
 	int i=0;
 	while (i < len) {
-		if (m[i] >= 'a' && m[i] <= 'c') m[i] = (int) (s[i] - 'a');
+		if (s[i] >= 'a' && s[i] <= 'c') m[i] = (int) (s[i] - 'a');
 		else m[i] = -1;
 		i++;
 	}
